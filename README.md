@@ -41,8 +41,6 @@ More samples:
 Credit
 -------------------
 
-This theme inspired from Codecademy editor and Google Material design.
+This repo was forked from [hrsetyono's theme](https://github.com/hrsetyono/pacific-atom) with some additional tweaks. Inspiration was also drawn from Codecademy's editor and Google Material design.
 
-It is converted from my [Sublime Text version](https://github.com/hrsetyono/theme_pacific) that is based on [Monokai Extended](https://github.com/jonschlinkert/sublime-monokai-extended).
-
-Also thank you to everyone who have given feedbacks and reported some bugs.
+Licensed under MIT

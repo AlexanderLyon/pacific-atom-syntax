@@ -51,7 +51,7 @@ atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-atom-text-editor.is-focused .syntax--line-number.cursor-line-no-selection, atom-text-editor.is-focused .syntax--line.cursor-line { 
+atom-text-editor.is-focused .syntax--line-number.cursor-line-no-selection, atom-text-editor.is-focused .syntax--line.cursor-line {
   background-color: @pac-dark;
 }
 
@@ -753,4 +753,26 @@ atom-text-editor.is-focused .syntax--line-number.cursor-line-no-selection, atom-
 .syntax--attribute-name.syntax--angular,
 .syntax--punctuation.syntax--block.syntax--angular {
   color: @pac-blue !important;
+}
+
+
+
+/*** Custom Styles ***/
+
+.editor.is-focused {
+
+  .line.cursor-line {
+    background: #3D505D;
+    //outline: 1px solid #678092;
+  }
+
+}
+
+atom-text-editor.is-focused .selection .region {
+  background-color: #2F363B;
+  border-radius: 4px;
+}
+
+.syntax--function .syntax--storage.syntax--type {
+  font-style: normal;
 }

@@ -1,18 +1,17 @@
 {
-  "name": "pacific-dark",
+  "name": "pacific-dark-custom",
   "theme": "syntax",
-  "version": "0.5.0",
-  "description": "A simple theme that blend well with One Dark UI.",
+  "version": "0.5.1",
+  "description": "Dark syntax theme for Atom",
   "keywords": [
     "syntax",
     "dark",
     "theme",
+    "atom",
     "codecademy",
-    "twig",
-    "windows",
     "material"
   ],
-  "repository": "https://github.com/hrsetyono/pacific-atom",
+  "repository": "https://github.com/AlexanderLyon/pacific-atom-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
