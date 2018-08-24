@@ -759,19 +759,44 @@ atom-text-editor.is-focused .syntax--line-number.cursor-line-no-selection, atom-
 
 /*** Custom Styles ***/
 
-.editor.is-focused {
+atom-pane-container.panes {
+  atom-text-editor {
 
-  .line.cursor-line {
-    background: #3D505D;
-    //outline: 1px solid #678092;
-  }
+    // Highlighted selection:
+    &.is-focused .selection .region {
+      background-color: #2F363B;
+      border-radius: 5px;
+    }
 
+    &.editor {
+
+      &.is-focused {
+        .line.cursor-line {
+          background: #3D505D;
+          //outline: 1px solid #678092;
+        }
+      }
+
+      .highlight {
+        // Find and replace matches:
+        &.find-result .region {
+          background: #5D6E7C;
+          border: 1px solid #6E889B;
+          border-radius: 4px;
+        }
+
+        // Current result:
+        &.current-result .region, &.current-result ~ .highlight.selection .region {
+          background: @syntax-background-color; // to distinguish from the other results
+          border-color: #FFFFFF;
+        }
+      }
+    }
+
+
+  } /* End atom-text-editor */
 }
 
-atom-text-editor.is-focused .selection .region {
-  background-color: #2F363B;
-  border-radius: 4px;
-}
 
 .syntax--function .syntax--storage.syntax--type {
   font-style: normal;
